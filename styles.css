@@ -4,7 +4,7 @@ h1, footer {
 }
 
 body {
-    opacity: 50%;
+    opacity: 20%;
     background-image: url("donegal_coast.png");
 }
 
@@ -14,5 +14,5 @@ body {
     margin-right: auto;
     padding: 20px;
     background-color: aliceblue;
-    opacity: 50%;
+    opacity: 80%;
 }
