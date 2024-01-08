@@ -1,0 +1,13 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    opacity: 50%;
+    background-image: url("donegal_coast.png");
+}
