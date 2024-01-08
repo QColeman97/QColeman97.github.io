@@ -1,11 +1,10 @@
 h1, p {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    text-emphasis-color: black;
 }
 
 body {
-    opacity: 20%;
+    opacity: 100%;
     background-image: url("donegal_coast.png");
 }
 
@@ -15,5 +14,5 @@ body {
     margin-right: auto;
     padding: 20px;
     background-color: aliceblue;
-    opacity: 80%;
+    opacity: 100%;
 }
