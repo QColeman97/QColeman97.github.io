@@ -1,36 +1,37 @@
 h1, p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Tahoma;;
     text-align: center;
 }
 
 body {
-    opacity: 100%;
-    background-image: url("donegal_coast.png");
+    background-color: #E4E4E4;
     margin: 0;
+    padding: 50px;
 }
 
 .title {
-    margin: 20px auto;
+    margin: auto auto 25px;
     width: 80%;
     padding: 2px;
-    background: linear-gradient(rgb(120,120,200), rgba(240,240,255,1) 10%, rgba(240,240,255,1) 90%, rgba(120,120,230,1));
-    box-shadow: 0 0 5px 20px rgb(120,120,200);
+    background: linear-gradient(#A0A0E4, #E4E4E4 10%, #E4E4E4 90%, #C0C0E4);
+    box-shadow: 0 0 5px 20px #A0A0E4;
     border-radius: 10px;
 }
 
-.frame {
+/* .frame {
     width: 80%;
     margin: auto;
     padding: 10px;
-    background-color: rgb(120,120,200);
-    box-shadow: 0 0 5px 10px rgb(120,120,200);
+    background-color: #A0A0E4;
+    box-shadow: 0 0 5px 10px #A0A0E4;
     border-radius: 10px;
-}
+} */
 
 .content {
-    width: 90%;
+    width: 80%;
     margin: auto;
     padding: 50px;
-    background: linear-gradient(rgb(120,120,200), rgba(240,240,255,1) 10%, rgba(240,240,255,1) 90%, rgba(120,120,230,1));
+    background: linear-gradient(#A0A0E4, #E4E4E4 10%, #E4E4E4 90%, #C0C0E4);
+    box-shadow: 0 0 5px 10px #A0A0E4;
     border-radius: 10px;
 }
