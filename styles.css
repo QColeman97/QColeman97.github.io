@@ -9,27 +9,9 @@ body {
     padding: 50px;
 }
 
-.title {
-    margin: auto auto 25px;
-    width: 80%;
-    padding: 2px;
-    background: linear-gradient(#A0A0E4, #E4E4E4 10%, #E4E4E4 90%, #C0C0E4);
-    box-shadow: 0 0 5px 20px #A0A0E4;
-    border-radius: 10px;
-}
-
-/* .frame {
-    width: 80%;
-    margin: auto;
-    padding: 10px;
-    background-color: #A0A0E4;
-    box-shadow: 0 0 5px 10px #A0A0E4;
-    border-radius: 10px;
-} */
-
 .content {
-    width: 80%;
-    margin: auto;
+    width: 33%;
+    margin: 100px auto auto;
     padding: 50px;
     background: linear-gradient(#A0A0E4, #E4E4E4 10%, #E4E4E4 90%, #C0C0E4);
     box-shadow: 0 0 5px 10px #A0A0E4;
