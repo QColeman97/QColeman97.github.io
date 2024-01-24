@@ -1,10 +1,16 @@
+:root {
+    --base-color: #E4E4E4;
+    --accent-color1: #A0A0E4;
+    --accent-color2: #C0C0E4;
+}
+
 h1, p {
     font-family: Verdana, Tahoma;;
     text-align: center;
 }
 
 body {
-    background-color: #E4E4E4;
+    background-color: var(--base-color);
     margin: 0;
     padding: 50px;
 }
@@ -13,7 +19,7 @@ body {
     width: 33%;
     margin: 100px auto auto;
     padding: 50px;
-    background: linear-gradient(#A0A0E4, #E4E4E4 10%, #E4E4E4 90%, #C0C0E4);
-    box-shadow: 0 0 5px 10px #A0A0E4;
+    background: linear-gradient(var(--accent-color1), var(--base-color) 10%, var(--base-color) 90%, var(--accent-color2));
+    box-shadow: 0 0 5px 10px var(--accent-color1);
     border-radius: 10px;
 }
