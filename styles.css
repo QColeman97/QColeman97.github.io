@@ -1,5 +1,7 @@
 :root {
     --base-color: #E4E4E4;
+    --dark-color2: #301160;
+    --dark-color1: #553388;
     --accent-color1: #A0A0E4;
     --accent-color2: #C0C0E4;
 }
@@ -7,6 +9,15 @@
 h1, p {
     font-family: Verdana, Tahoma;;
     text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+hr {
+    background-color: var(--dark-color2);
+    height: 2px;
 }
 
 body {
@@ -22,4 +33,22 @@ body {
     background: linear-gradient(var(--accent-color1), var(--base-color) 10%, var(--base-color) 90%, var(--accent-color2));
     box-shadow: 0 0 5px 10px var(--accent-color1);
     border-radius: 10px;
+}
+
+footer {
+    padding: 30px 200px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    place-items: center;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color1);
+}
+
+a:hover {
+    color: var(--dark-color2);
 }
