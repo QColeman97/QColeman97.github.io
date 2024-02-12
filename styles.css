@@ -23,11 +23,18 @@ hr {
 body {
     background-color: var(--base-color);
     margin: 0;
-    padding: 50px;
+    padding: 20px 10px;
 }
 
-.content {
-    width: 33%;
+header, footer {
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(var(--accent-color1), var(--base-color) 10%, var(--base-color) 90%, var(--accent-color2));
+    box-shadow: 0 0 5px 10px var(--accent-color1);
+    border-radius: 10px;
+}
+
+#about, #projects, #contact {
     margin: 100px auto auto;
     padding: 50px;
     background: linear-gradient(var(--accent-color1), var(--base-color) 10%, var(--base-color) 90%, var(--accent-color2));
@@ -35,10 +42,11 @@ body {
     border-radius: 10px;
 }
 
-footer {
+#socials {
     padding: 30px 150px 10px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
     justify-content: space-evenly;
     place-items: center;
     font-size: 3rem;
