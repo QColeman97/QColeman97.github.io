@@ -1,22 +1,29 @@
 :root {
-    --base-color: #E4E4E4;
-    --dark-color2: #301160;
-    --dark-color1: #553388;
-    --accent-color1: #A0A0E4;
-    --accent-color2: #C0C0E4;
+    --base-color: black;
+    --primary-color2: #d5be63;
+    --primary-color1: wheat;
+    --name-color: orange;
+    --accent-color1: rgb(154, 100, 0);
+    --accent-color2: rgb(200, 130, 1);
+    --text-color: white;
 }
 
-h1, p {
-    font-family: Verdana, Tahoma;;
+h1, h2, h3, p {
+    font-family: Gill Sans, sans-serif;
     text-align: center;
+    color: var(--primary-color1);
 }
 
-h1 {
-    font-size: 45px;
+p {
+    color: var(--text-color);
 }
+
+/* h1 {
+    font-size: 45px;
+} */
 
 hr {
-    background-color: var(--dark-color2);
+    background-color: var(--primary-color2);
     height: 2px;
 }
 
@@ -26,7 +33,31 @@ body {
     padding: 20px 10px;
 }
 
+header {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 3.5rem;
+    color: var(--name-color);
+}
+
+header input {
+    font-family:  "DejaVu Sans Mono", monospace;
+    /* font-style: oblique; */
+    /* font-variant: small-caps; */
+    font-weight: 200;
+    font-size: 1.5rem; 
+    place-items: center stretch;
+    width: 10vw;
+    position: relative;
+    top: -10px;
+}
+
+footer {
+    font-size: 0.75rem;
+}
+
 header, footer {
+    display: flex;
+    justify-content: space-between;
     margin: 0;
     padding: 10px;
     background: linear-gradient(var(--accent-color1), var(--base-color) 10%, var(--base-color) 90%, var(--accent-color2));
@@ -54,9 +85,9 @@ header, footer {
 
 a {
     text-decoration: none;
-    color: var(--dark-color1);
+    color: var(--primary-color1);
 }
 
 a:hover {
-    color: var(--dark-color2);
+    color: var(--primary-color2);
 }
