@@ -1,76 +1,135 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+/* TODO get working */
+@media (max-width: 1000px) {
+    header {
+        font-size: 2rem;
+    }
+}
+
 :root {
     --base-color: black;
-    --primary-color2: #d5be63;
-    --primary-color1: wheat;
+    --primary-color4: #202020;
+    --primary-color3: #404040;
+    --primary-color2: #606060;
+    --primary-color1: #C0C0C0;
     --name-color: orange;
-    --accent-color1: rgb(154, 100, 0);
-    --accent-color2: rgb(200, 130, 1);
-    --text-color: white;
+    --text-color: #FAFAFA;
 }
 
 h1, h2, h3, p {
-    font-family: Gill Sans, sans-serif;
+    font-family: "Arial", sans-serif;
     text-align: center;
-    color: var(--primary-color1);
-}
-
-p {
     color: var(--text-color);
 }
 
-/* h1 {
-    font-size: 45px;
-} */
+h1 {
+    font-size: 3rem;
+}
 
-hr {
-    background-color: var(--primary-color2);
-    height: 2px;
+p {
+    font-size: 1.2rem;
 }
 
 body {
-    background-color: var(--base-color);
+    background-color: var(--primary-color3);
     margin: 0;
-    padding: 20px 10px;
 }
 
 header {
-    font-family: Brush Script MT, Brush Script Std, cursive;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 5px 30px 5px 0px;
+    background: var(--base-color);
+    box-shadow: 0 0 5px 10px orange;
+    font-family: "Brush Script MT", "Brush Script Std", cursive;
     font-size: 3.5rem;
-    color: var(--name-color);
+    /* color: var(--name-color); */
+    color: black;
+    position: fixed;
+    top: 0;
 }
 
 header input {
     font-family:  "DejaVu Sans Mono", monospace;
-    /* font-style: oblique; */
-    /* font-variant: small-caps; */
+    font-style: italic;
     font-weight: 200;
-    font-size: 1.5rem; 
-    place-items: center stretch;
-    width: 10vw;
+    font-size: 1.2rem; 
+    letter-spacing: 0.2rem;
+    color: var(--primary-color1);
+    background-color: var(--base-color);
+    width: 7vw;
+    border-width: 0;
     position: relative;
-    top: -10px;
+    top: -7px;
 }
 
-footer {
-    font-size: 0.75rem;
-}
-
-header, footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 10px;
-    background: linear-gradient(var(--accent-color1), var(--base-color) 10%, var(--base-color) 90%, var(--accent-color2));
-    box-shadow: 0 0 5px 10px var(--accent-color1);
-    border-radius: 10px;
+header input:hover {
+    background-color: var(--primary-color3);
+    cursor: pointer;
 }
 
 #about, #projects, #contact {
-    margin: 100px auto auto;
-    padding: 50px;
-    background: linear-gradient(var(--accent-color1), var(--base-color) 10%, var(--base-color) 90%, var(--accent-color2));
-    box-shadow: 0 0 5px 10px var(--accent-color1);
-    border-radius: 10px;
+    min-height: 60vh;
+    margin: 0;
+    padding: 10vw 20vw 10vw 20vw;
+    align-items: center;
+    background-color: var(--primary-color3);
+}
+
+#about {
+    margin-top: 70px;
+}
+
+#about p {
+    padding: 80px 100px;
+}
+
+#projects {
+    background-color: var(--primary-color2);
+}
+
+#projects-box {
+    display: grid;
+    gap: 1rem;
+}
+
+.project {
+    padding: 10px;
+    background-color: var(--primary-color3);
+}
+
+.project:hover {
+    cursor: pointer;
+    background-color: var(--primary-color4);
+}
+
+.project h2 {
+    height: 50px;
+}
+
+.project-img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (min-width: 800px) {
+    #projects-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #projects-box .project h2 {
+        height: 130px;
+    }
 }
 
 #socials {
@@ -80,7 +139,7 @@ header, footer {
     gap: 0.25rem 1rem;
     justify-content: space-evenly;
     place-items: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 a {
