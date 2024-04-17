@@ -5,7 +5,7 @@
     --primary-color2: #606060;
     --primary-color1: #C0C0C0;
     --name-color: orange;
-    --text-color: #FAFAFA;
+    --text-color: #FFF;
 }
 
 * {
@@ -16,9 +16,9 @@
 
 body {
     font-family:  "DejaVu Sans Mono", monospace;
+    -webkit-font-smoothing: antialiased;
     background-color: var(--primary-color3);
     color: var(--text-color);
-    -webkit-font-smoothing: antialiased;
 }
 
 header {
@@ -56,11 +56,6 @@ header p {
 
 #about, #projects {
     height: 100vh;
-    padding: 10vw 20vw 10vw 20vw;
-}
-
-#about {
-    margin-top: 70px;
 }
 
 #about p {
@@ -71,23 +66,72 @@ header p {
     background-color: var(--primary-color2);
 }
 
-#projects-box {
-    display: grid;
-    gap: 1rem;
-}
-
-.project {
-    padding: 10px;
+.project-tabs {
     background-color: var(--primary-color3);
+    padding-top: 1rem;
+    border-bottom: 3px solid var(--primary-color4);
 }
 
-.project:hover {
+.project-tabs .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    /* 3 items below are common for flex & grid layout */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    /* padding: 0 2rem; */
+}
+.project-tabs p {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.project-tabs .container > div {
+    padding: 1.5rem 0;
+}
+
+.project-tabs .container > div:hover {
     cursor: pointer;
-    background-color: var(--primary-color4);
 }
 
-.project h2 {
-    height: 50px;
+.tab-item {
+    width: 100%;
+}
+
+.tab-border {
+    border-bottom: var(--name-color) 4px solid;
+}
+
+/* Tab Content */
+.project-box {
+    padding: 3rem 0;
+}
+
+/* Hide content initially */
+#tab-1-content,
+#tab-2-content {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.tab-content-item .tab-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* repeat twice, 1 fraction */
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .project-img {
@@ -96,7 +140,7 @@ header p {
     object-fit: cover;
 }
 
-#socials {
+.socials {
     padding: 30px 150px 10px;
     display: flex;
     flex-wrap: wrap;
@@ -104,15 +148,6 @@ header p {
     justify-content: space-evenly;
     place-items: center;
     font-size: 2.5rem;
-}
-
-a {
-    text-decoration: none;
-    color: var(--primary-color1);
-}
-
-a:hover {
-    color: var(--primary-color2);
 }
 
 /* Text Styles */
@@ -124,16 +159,21 @@ a:hover {
 .btn {
     font-style: italic;
     font-weight: 200;
-    font-size: 1.2rem; 
     text-align: center;
     letter-spacing: 0.2rem;
     border-width: 0;
     background-color: var(--primary-color3);
+    text-decoration: none;
+    color: var(--primary-color1);
     cursor: pointer;
 }
 
 .btn:hover {
-    opacity: 0.9;
+    opacity: 0.5;
+}
+
+.btn-text {
+    font-size: 1.2rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -143,11 +183,11 @@ a:hover {
 }
 
 @media (min-width: 800px) {
-    #projects-box {
+    .project-box {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    #projects-box .project h2 {
+    .project-box .project h2 {
         height: 130px;
     }
 }
