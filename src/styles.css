@@ -1,0 +1,207 @@
+/* :root {
+    --base-color: black;
+    --primary-color4: #202020;
+    --primary-color3: #404040;
+    --primary-color2: #606060;
+    --primary-color1: #C0C0C0;
+    --accent-color: aqua;
+    --text-color: #FFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:  "DejaVu Sans Mono", monospace;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--primary-color3);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: var(--base-color);
+    box-shadow: 0 0 5px 10px var(--accent-color);
+    color: var(--accent-color);
+}
+
+header p {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(0, -50%);
+}
+
+.nav_container {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    width: 25%;
+    transform: translate(0, -50%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#about, #projects, #contact {
+    padding: 10vw 20vw 10vw 20vw;
+    align-items: center;
+}
+
+#about, #projects {
+    height: 100vh;
+}
+
+#about p {
+    padding: 80px 100px;
+}
+
+#projects {
+    background-color: var(--primary-color2);
+}
+
+.project-tabs {
+    background-color: var(--primary-color3);
+    padding-top: 1rem;
+    border-bottom: 3px solid var(--primary-color4);
+}
+
+.project-tabs .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem; */
+    /* 3 items below are common for flex & grid layout */
+    /*align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+
+/* Container */
+/* .container { */
+    /* max-width: 70%; */
+    /* margin: auto; */
+    /* overflow: hidden; */
+    /* padding: 0 2rem; */
+/* } */
+
+/*.project-tabs p {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.project-tabs .container > div {
+    padding: 1.5rem 0;
+}
+
+.project-tabs .container > div:hover {
+    cursor: pointer;
+}
+
+.tab-item {
+    width: 100%;
+}
+
+.tab-border {
+    border-bottom: var(--accent-color) 4px solid;
+}*/
+
+/* Tab Content */
+/*.project-box {
+    padding: 3rem 0;
+} */
+
+/* Hide content initially */
+#tab-1-content,
+#tab-2-content {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+/*.tab-content-item .tab-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* repeat twice, 1 fraction */
+    /* grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.socials {
+    padding: 30px 150px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    justify-content: space-evenly;
+    place-items: center;
+    font-size: 2.5rem;
+} */
+
+/* Text Styles */
+/* .text-lg {
+    font-size: 2rem; 
+} */
+
+/* Buttons */
+/* .btn {
+    text-decoration: none;
+    color: var(--primary-color1);
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+.btn-text {
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    border-width: 0;
+    background-color: var(--primary-color3);
+    font-size: 1.2rem;
+    color: --var(accent-color);
+    cursor: pointer;
+}
+
+.btn-text:hover {
+    opacity: 0.5;
+} */
+
+/*@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (min-width: 800px) {
+    .project-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-box .project h2 {
+        height: 130px;
+    }
+}*/
+
+/* TODO get working
+@media (max-width: 1000px) {
+    header {
+        font-size: 2rem;
+    }
+} */
