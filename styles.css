@@ -135,16 +135,26 @@
     border-radius: 8px;
     width: 250px;
     text-align: center;
+    display: flex;          /* Add flex display */
+    flex-direction: column; /* Stack children vertically */
+    gap: 1rem;             /* Add consistent spacing between elements */
   }
   
   .project-card img {
     width: 100%;
+    height: 150px;  /* Set fixed height */
+    object-fit: cover;  /* Maintain aspect ratio and cover area */
     border-radius: 8px;
+    margin: 0;             /* Remove any margin */
   }
   
   .project-card h3 {
     font-size: 1.5rem;
-    margin: 1rem 0;
+    margin: 0;             /* Remove margins to use gap instead */
+  }
+
+  .project-card p {
+    margin: 0;             /* Remove margins to use gap instead */
   }
   
   .project-link {
