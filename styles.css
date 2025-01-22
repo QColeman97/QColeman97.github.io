@@ -1,232 +1,317 @@
-/* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body and basic layout */
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Header and Navigation */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-left: 1.5rem;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* About Section Styling */
-  #about {
-    padding: 4rem 2rem;
-    text-align: center;  /* Changed back to center */
-  }
-  
-  #about h2 {
-    font-size: 1.5rem;   /* Set font size for all h2 */
-    margin-bottom: 2rem;
-    /* Removed text-align property to inherit from parent */
-  }
-  
-  .about-content {
-    display: flex;
-    justify-content: center;  /* Changed back to center */
-    align-items: center;
-    gap: 3rem;  /* Adds space between the image and text */
-    flex-wrap: wrap;  /* Ensures responsiveness for smaller screens */
-  }
-  
-  .profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #fff;
-    padding: 10px; /* Add padding for the frame */
-    background-color: #333; /* Dark-colored frame */
-  }
-  
-  .bio-text {
-    max-width: 600px; /* Restricts the width of the bio text */
-  }
-  
-  .bio-text h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .bio-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #666;
-  }
-
-  .resume-btn {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 1.5rem;
-    transition: background-color 0.3s ease;
-  }
-
-  .resume-btn:hover {
-    background-color: #555;
-  }
-  
-  /* Projects Section */
-  #projects {
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-  
-  #projects h2 {
-    font-size: 1.5rem;   /* Set font size for all h2 */
-  }
-  
-  .projects-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .project-card {
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    border-radius: 8px;
-    width: 250px;
-    text-align: center;
-    display: flex;          /* Add flex display */
-    flex-direction: column; /* Stack children vertically */
-    gap: 1rem;             /* Add consistent spacing between elements */
-  }
-  
-  .project-card img {
-    width: 100%;
-    height: 150px;  /* Set fixed height */
-    object-fit: cover;  /* Maintain aspect ratio and cover area */
-    border-radius: 8px;
-    margin: 0;             /* Remove any margin */
-  }
-  
-  .project-card h3 {
-    font-size: 1.5rem;
-    margin: 0;             /* Remove margins to use gap instead */
-  }
-
-  .project-card p {
-    margin: 0;             /* Remove margins to use gap instead */
-  }
-  
-  .project-link {
-    color: #ff7f50;
-    text-decoration: none;
-  }
-  
-  .project-link:hover {
-    text-decoration: underline;
-  }
-  
-  /* Contact Section */
-  #contact {
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-  
-  #contact h2 {
-    font-size: 1.5rem;   /* Set font size for all h2 */
-  }
-
-  .socials {
-    padding: 30px 150px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem 1rem;
-    justify-content: space-evenly;
-    place-items: center;
-    font-size: 2.5rem;
+:root {
+  --primary-color: #333;
+  --secondary-color: #ff7f50;
+  --accent-color: #ff6347;
+  --name-color: #ff7f50;
+  --text-color: #333;
+  --bg-color: #f9f9f9;
+  --primary-light: #444;  /* Add new variable for lighter shade */
 }
 
-  /* form input,
-  form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  form textarea {
-    height: 150px;
-  }
-  
-  form button {
-    background-color: #ff7f50;
-    color: white;
-    padding: 0.75rem 2rem;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #ff6347;
-  } */
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
-    margin-top: 2rem;
-  }
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Buttons */
-  .icon-btn {
-    color: #333;
-    cursor: pointer;
-  }
+/* Body and basic layout */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--bg-color);
+  color: #333;
+  line-height: 1.6;
+}
 
-  .icon-btn:hover {
-    opacity: 0.5;
-  }
+/* Header and Navigation */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* About Section Styling */
+#about {
+  padding: 4rem 2rem;
+  text-align: center;  /* Changed back to center */
+}
+
+#about h2 {
+  font-size: 1.5rem;   /* Set font size for all h2 */
+  margin-bottom: 2rem;
+  /* Removed text-align property to inherit from parent */
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;  /* Changed back to center */
+  align-items: center;
+  gap: 3rem;  /* Adds space between the image and text */
+  flex-wrap: wrap;  /* Ensures responsiveness for smaller screens */
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  padding: 10px; /* Add padding for the frame */
+  background-color: #333; /* Dark-colored frame */
+}
+
+.bio-text {
+  max-width: 600px; /* Restricts the width of the bio text */
+}
+
+.bio-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bio-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.resume-btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #555;
+}
+
+/* Projects Section */
+#projects {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 1.5rem;   /* Set font size for all h2 */
+  margin-bottom: 2rem;
+}
+
+.projects-content {
+  max-width: 900px;       /* Limit maximum width */
+  margin-left: auto;      /* Center the container */
+  margin-right: auto;
+  /* background-color: red; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: var(--primary-color);
+}
+
+.project-tabs {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  align-items: stretch;  /* Make all items stretch to match tallest */
+  justify-content: center;
+  text-align: center;
+}
+
+.project-tab {
+  width: 100%;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;      /* Change min-height to fixed height */
+}
+
+.project-tab p {
+  font-size: 1.2rem;
+  margin: 0;            /* Remove default paragraph margins */
+  padding: 0 1rem;      /* Add some horizontal padding */
+}
+
+.project-tab:hover {
+  opacity: 0.5;
+}
+
+.project-tab-border {
+  border-bottom: var(--secondary-color) 4px solid;
+}
+
+.project-cards-container {
+  display: flex;
+  flex-direction: column;  /* Stack cards vertically */
+  gap: 2rem;              /* Add space between cards */
+}
+
+/* Hide project card initially */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content,
+#tab-4-content {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.project-card {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;  /* Change to row for side-by-side layout */
+  gap: 2rem;
+  color: var(--text-color);
+  align-items: center;  /* Center items vertically */
+  justify-content: flex-start;  /* Ensure left alignment */
+  background-color: var(--bg-color);  /* Add lighter background */
+  border-bottom-left-radius: 8px;   /* Add bottom-left radius */
+  border-bottom-right-radius: 8px;  /* Add bottom-right radius */
+}
+
+.project-card img {
+  width: 400px;        /* Fixed width */
+  height: 300px;       /* Adjusted height */
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0;
+  flex-shrink: 0;     /* Prevent image from shrinking */
+}
+
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;    /* Left align text */
+  flex-grow: 1;        /* Allow content to fill remaining space */
+  margin-top: 20px;
+  margin-left: 0;        /* Ensure no left margin */
+  align-self: stretch;   /* Stretch content vertically */
+  justify-content: center; /* Center content vertically */
+}
+
+/* .project-card h3 {
+  font-size: 1.5rem;
+  margin: 0;
+} */
+
+.project-card p {
+  margin: 0;             /* Remove margins to use gap instead */
+}
+
+.project-link-btn {
+  background-color: #ff7f50;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  /* margin-top: 1.5rem; */
+  transition: background-color 0.3s ease;
+}
+
+.project-link-btn:hover {
+  opacity: 0.5;
+}
+
+/* Contact Section */
+#contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 1.5rem;   /* Set font size for all h2 */
+}
+
+.socials {
+  padding: 30px 150px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  justify-content: space-evenly;
+  place-items: center;
+  font-size: 2.5rem;
+}
+
+/* form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form button {
+  background-color: #ff7f50;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ff6347;
+} */
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* Buttons */
+.icon-btn {
+  color: #333;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  opacity: 0.5;
+}
